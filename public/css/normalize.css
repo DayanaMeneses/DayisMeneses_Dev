@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Silkscreen:wght@400;700&display=swap');
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: "Mooli", sans-serif;
+    font-size: 16px;
+    color: var(--colorLetter);
+}
+
+:root {
+    /* 
+    color-scheme: light dark; */
+    --colorItemsNavbar: rgb(0, 0, 0);
+    --colorLetter: rgb(255, 255, 255);
+    --colorBackgroundNavbar: rgb(0, 136, 255);
+}
+/* 
+a {
+    color: light-dark(rgb(255, 0, 195), rgb(224, 224, 224));
+} */
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    background: none;
+    border: none;
+    outline: none;
+}
