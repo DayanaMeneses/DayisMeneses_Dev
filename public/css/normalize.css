@@ -11,14 +11,14 @@
     color-scheme: light dark; */
     --colorItemsNavbar: rgb(0, 0, 0);
     --colorLetter: rgb(255, 255, 255);
-    --colorBackgroundNavbar: rgb(0, 136, 255);
+    --colorBackgroundNavbar: rgba(255, 255, 255, 0.208);
 }
 /* 
 a {
     color: light-dark(rgb(255, 0, 195), rgb(224, 224, 224));
 } */
-
 body {
+    width: 100vw;
     background-color: rgb(29, 29, 29);
 }
 
@@ -28,13 +28,9 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 1.5em;
-}
+h2 { font-size: 1.5em; }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 button, input {
     background: none;
@@ -46,3 +42,7 @@ iframe {
     width: 200px;
     height: auto;
 }
+/* 
+img {
+    width: 100px;
+} */
