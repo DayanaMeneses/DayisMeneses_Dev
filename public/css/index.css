@@ -24,6 +24,47 @@
 }
  */
 
+.main, .aside {
+    & .main__section-container-work, .main__section-container-projects, .aside__section-container-education {
+        margin: 20px;
+        & h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }& >a, >p {
+            display: block;
+            position: relative;
+            border-left: 2px solid #dff1ff;
+            /* margin: 10px 0; */
+            padding: 10px 15px;
+            & span:nth-child(1)::before {
+                background-color: #0091ff;
+                content: "";
+                width: .5em;
+                height: .5em;
+                border-radius: 50%;
+                position: absolute;
+                left: -.3em;
+                top: 16px; 
+                z-index: 10;
+            }
+            & span:nth-child(2) {
+                padding-left: 10px;
+            }
+            & span:nth-child(3) {
+                display: inline-block;
+                padding: 5px 0;
+                color: #c3c3c3;
+            }
+            & span:nth-child(4) {
+                display: inline-block;
+                padding-bottom: 30px;
+                color: #6c6c6c;
+            }
+        }
+    }
+}
+
  .main {
     & .main__section-container-profile {
         text-align: center;
@@ -103,43 +144,7 @@
     }
 
     & .main__section-container-work, .main__section-container-projects {
-        margin: 20px;
-        & h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        & >a, >p {
-            display: block;
-            position: relative;
-            border-left: 2px solid #dff1ff;
-            /* margin: 10px 0; */
-            padding: 10px 15px;
-            & span:nth-child(1)::before {
-                background-color: #0091ff;
-                content: "";
-                width: .5em;
-                height: .5em;
-                border-radius: 50%;
-                position: absolute;
-                left: -.3em;
-                top: 16px; 
-                z-index: 10;
-            }
-            & span:nth-child(2) {
-                padding-left: 10px;
-            }
-            & span:nth-child(3) {
-                display: inline-block;
-                padding: 5px 0;
-                color: #c3c3c3;
-            }
-            & span:nth-child(4) {
-                display: inline-block;
-                padding-bottom: 30px;
-                color: #6c6c6c;
-            }
-        }
+        
         & >a:nth-child(4) {
             & span:nth-child(4) {
                 padding-bottom: 10px;
@@ -202,12 +207,68 @@
     0% { width: 0%; }
     30% { width: 100% }
 }
-
 @keyframes profileTitleWaiting {
     from { border-color: transparent; }
     to { border-color: #ffffff; }
 }
 
+
+.aside {
+    & .aside__section-container-education {
+        & >a:nth-child(5) {
+            & span:nth-child(4) {
+                padding-bottom: 0px;
+            }
+        }
+        & >a:hover {
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            & span:nth-child(1), span:nth-child(2) {
+                color: rgb(255, 255, 255);
+                font-weight: 800;
+                z-index: 1000;
+            }
+            & span:nth-child(3) {
+                color: rgb(255, 255, 255);
+            }
+            & span:nth-child(4) {
+                color: rgb(255, 255, 255);
+            }
+        }
+        & >a:hover::before {
+            width: 100%;
+            height: 100%;
+            background-color: #00000077;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(3px);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -10;
+        }/* 
+        & >a:nth-child(2):hover {
+            background: url('../img/bot\ telegram.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        & >a:nth-child(3):hover {
+            background: url('../img/ecommerce.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        & >a:nth-child(4):hover {
+            background: url('../img/hangman.avif');
+            background-position: center;
+            background-size: cover;
+        } */
+    }
+}
 
 
 
