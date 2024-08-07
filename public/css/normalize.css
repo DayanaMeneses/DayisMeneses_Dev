@@ -41,3 +41,8 @@ button, input {
     border: none;
     outline: none;
 }
+
+iframe {
+    width: 300px;
+    height: auto;
+}
