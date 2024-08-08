@@ -38,7 +38,7 @@
             /* margin: 10px 0; */
             padding: 10px 15px;
             & span:nth-child(1)::before {
-                background-color: #0091ff;
+                background-color: #3aaaff;
                 content: "";
                 width: .5em;
                 height: .5em;
@@ -103,7 +103,7 @@
         }
         & h4 {
             margin: 10px 0;
-            color: rgb(23, 213, 255);
+            color: rgb(0, 242, 255);
             & span {
                 color: rgb(158, 158, 158);
             }
@@ -140,7 +140,17 @@
                 padding: 15px 20px;
             }
         }
-        
+        & .aside__section-container-skills {
+            h2 {
+                font-size: 2em;
+                padding-bottom: 10px;
+            }
+            & p {
+                & span {
+                    padding: 10px;
+                }
+            }
+        }
     }
 
     & .main__section-container-work, .main__section-container-projects {
@@ -203,14 +213,6 @@
     }
 }
 
-@keyframes profileTitleWriting {
-    0% { width: 0%; }
-    30% { width: 100% }
-}
-@keyframes profileTitleWaiting {
-    from { border-color: transparent; }
-    to { border-color: #ffffff; }
-}
 
 
 .aside {
@@ -274,20 +276,16 @@
 
 
 
+@keyframes profileTitleWriting {
+    0% { width: 0%; }
+    30% { width: 100% }
+}
+@keyframes profileTitleWaiting {
+    from { border-color: transparent; }
+    to { border-color: #ffffff; }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer {
+    margin-bottom: 6em;
+    text-align: center;
+}
