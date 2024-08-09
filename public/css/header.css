@@ -1,12 +1,19 @@
 .header {
-    /* 
-    background-color: var(--colorBackgroundNavbar); 
-    */
+    
     & .header__container-title {
         background-color: var(--colorBackgroundNavbar);
         padding: 10px;
         & .header__container-title__content-title {
-            & h1 { color: #3aaaff; }
+            & h1 { 
+                & span {
+                    display: inline-block;
+                    margin: .1em;
+                    font-size: 1em;
+                    color: #3aaaff;
+                    font-family: "Silkscreen", sans-serif;
+                    transition: transform 1s;
+                }
+            }
         }
     }
     & .header__nav {
