@@ -19,7 +19,7 @@ for (let i = 0; i < containerSpanH1.length; i++) {
     animationTitle(i);
 }
 }, 3000);
-
+/* 
 
 animationTitle(1);
 animationTitle(2);
@@ -30,4 +30,4 @@ animationTitle(6);
 animationTitle(7);
 animationTitle(8);
 animationTitle(9);
-animationTitle(10);
+animationTitle(10); */
